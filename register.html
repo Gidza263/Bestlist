@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bestlist | Register</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-select.css">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Bestlist, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<!--fonts-->
+<link href='//fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!--//fonts-->	
+<!-- js -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- js -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.js"></script>
+<script>
+  $(document).ready(function () {
+    var mySelect = $('#first-disabled2');
+
+    $('#special').on('click', function () {
+      mySelect.find('option:selected').prop('disabled', true);
+      mySelect.selectpicker('refresh');
+    });
+
+    $('#special2').on('click', function () {
+      mySelect.find('option:disabled').prop('disabled', false);
+      mySelect.selectpicker('refresh');
+    });
+
+    $('#basic2').selectpicker({
+      liveSearch: true,
+      maxOptions: 1
+    });
+  });
+</script>
+<script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
+<link href="css/jquery.uls.css" rel="stylesheet"/>
+<link href="css/jquery.uls.grid.css" rel="stylesheet"/>
+<link href="css/jquery.uls.lcd.css" rel="stylesheet"/>
+<!-- Source -->
+<script src="js/jquery.uls.data.js"></script>
+<script src="js/jquery.uls.data.utils.js"></script>
+<script src="js/jquery.uls.lcd.js"></script>
+<script src="js/jquery.uls.languagefilter.js"></script>
+<script src="js/jquery.uls.regionfilter.js"></script>
+<script src="js/jquery.uls.core.js"></script>
+<script>
+			$( document ).ready( function() {
+				$( '.uls-trigger' ).uls( {
+					onSelect : function( language ) {
+						var languageName = $.uls.data.getAutonym( language );
+						$( '.uls-trigger' ).text( languageName );
+					},
+					quickList: ['en', 'hi', 'he', 'ml', 'ta', 'fr'] //FIXME
+				} );
+			} );
+		</script>
+</head>
+<body>
+<div class="header">
+		<div class="container">
+			<div class="logo">
+				<a href="index.html"><img src="images/bestlist.png" title="" alt="" style="max-width: 40%; max-height: 40%"/></a>
+			</div>
+			<div class="header-right">
+			<a class="account" href="login.html">My Account</a>
+			<span class="active uls-trigger">Select language</span>
+	<!-- Large modal -->
+			<div class="selectregion">
+				<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+				Select Your Region</button>
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+					aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+										&times;</button>
+									<h4 class="modal-title" id="myModalLabel">
+										Please Choose Your Location</h4>
+								</div>
+								<div class="modal-body">
+									 <form class="form-horizontal" role="form">
+										<div class="form-group">
+											<select id="basic2" class="show-tick form-control" multiple>
+												<optgroup label="Popular Cities">
+													<option selected style="display:none;color:#eee;">Select City</option>
+													<option>Johannesburg</option>
+													<option>Cape Town</option>
+													<option>Pretoria</option>
+													<option>Durban</option>
+													<option>Nelspruit</option>
+													<option>Bloemfontein</option>
+												</optgroup>
+												<optgroup label="More Cities">
+													<optgroup label="Gauteng">
+														<option>Benoni</option>
+                                                        <option>Boksburg</option>
+                                                        <option>Brakpan</option>
+                                                        <option>Carletonville</option>
+                                                        <option>Germiston</option>
+                                                        <option>Johannesburg</option>
+                                                        <option>Krugersdorp</option>
+                                                        <option>Pretoria</option>
+                                                        <option>Randburg</option>
+                                                        <option>Randfontein</option>
+                                                        <option>Roodepoort</option>
+                                                        <option>Soweto</option>
+                                                        <option>Springs</option>
+                                                        <option>Vanderbijlpark</option>
+                                                        <option>Vereeniging</option>
+													</optgroup>
+                                                    <optgroup label="KwaZulu-Natal">
+														
+                                                        <option>Durban</option>
+                                                        <option>Empangeni</option>
+                                                        <option>Ladysmith</option>
+                                                        <option>Newcastle</option>
+                                                        <option>Pietermaritzburg</option>
+                                                        <option>Pinetown</option>
+                                                        <option>Ulundi</option>
+                                                        <option>Umlazi</option>
+													</optgroup>
+													<optgroup label="Western Cape">
+                                                        <option>Bellville</option>
+                                                        <option>Cape Town</option>
+                                                        <option>Constantia</option>
+                                                        <option>George</option>
+                                                        <option>Hopefield</option>
+                                                        <option>Oudtshoorn</option>
+                                                        <option>Paarl</option>
+                                                        <option>Simon’s Town</option>
+                                                        <option>Stellenbosch</option>
+                                                        <option>Swellendam</option>
+                                                        <option>Worcester</option>
+													</optgroup>
+													<optgroup label="Free State">
+                                                        <option>Bethlehem</option>
+                                                        <option>Bloemfontein</option>
+                                                        <option>Jagersfontein</option>
+                                                        <option>Kroonstad</option>
+                                                        <option>Odendaalsrus</option>
+                                                        <option>Parys</option>
+                                                        <option>Phuthaditjhaba</option>
+                                                        <option>Sasolburg</option>
+                                                        <option>Virginia</option>
+                                                        <option>Welkom</option>
+													</optgroup>
+													<optgroup label="Eastern Cape">
+                                                        <option>Alice</option>
+                                                        <option>Butterworth</option>
+                                                        <option>East London</option>
+                                                        <option>Graaff-Reinet</option>
+                                                        <option>Grahamstown</option>
+                                                        <option>King William’s Town</option>
+                                                        <option>Mthatha</option>
+                                                        <option>Port Elizabeth</option>
+                                                        <option>Queenstown</option>
+                                                        <option>Uitenhage</option>
+                                                        <option>Zwelitsha</option>
+													</optgroup>
+													<optgroup label="Limpopo">
+
+                                                        <option>Giyani</option>
+                                                        <option>Lebowakgomo</option>
+                                                        <option>Musina</option>
+                                                        <option>Phalaborwa</option>
+                                                        <option>Polokwane</option>
+                                                        <option>Seshego</option>
+                                                        <option>Thohoyandou</option>
+                                                        <option>Louis Trichardt</option>
+													</optgroup>
+                                                    <optgroup label="Mpumalanga">
+                                                        <option>Emalahleni</option>
+                                                        <option>Nelspruit</option>
+                                                        <option>Secunda</option>
+                                                    </optgroup>
+                                                    <optgroup label="North West">
+                                                        <option>Klerksdorp</option>
+                                                        <option>Mahikeng</option>
+                                                        <option>Mmabatho</option>
+                                                        <option>Potchefstroom</option>
+                                                        <option>Rustenburg</option>
+                                                    </optgroup>
+                                                    <optgroup label="Northern Cape">
+                                                        <option>Kimberley</option>
+                                                        <option>Kuruman</option>
+                                                        <option>Port Nolloth</option> 
+                                                    </optgroup>	
+												</optgroup>
+											</select>
+										</div>
+									  </form>    
+								</div>
+							</div>
+						</div>
+					</div>
+				<script>
+				$('#myModal').modal('');
+				</script>
+			</div>
+		</div>
+		</div>
+	</div>
+	 <section>
+			<div id="page-wrapper" class="sign-in-wrapper">
+				<div class="graphs">
+					<div class="sign-up">
+						<h1>Create an account</h1>
+						<p class="creating"></p>
+						<h2>Personal Information</h2>
+						<div class="sign-u">
+							<div class="sign-up1">
+								<h4>Email Address* :</h4>
+							</div>
+							<div class="sign-up2">
+								<form>
+									<input type="text" placeholder=" " required=" "/>
+								</form>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="sign-u">
+							<div class="sign-up1">
+								<h4>Password* :</h4>
+							</div>
+							<div class="sign-up2">
+								<form>
+									<input type="password" placeholder=" " required=" "/>
+								</form>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="sign-u">
+							<div class="sign-up1">
+								<h4>Confirm Password* :</h4>
+							</div>
+							<div class="sign-up2">
+								<form>
+									<input type="password" placeholder=" " required=" "/>
+								</form>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="sub_home">
+							<div class="sub_home_left">
+								<form>
+									<input type="submit" value="Create">
+								</form>
+							</div>
+							<div class="sub_home_right">
+								<p>Go Back to <a href="index.html">Home</a></p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!--footer section start-->
+			<footer class="diff">
+			   <p class="text-center">&copy 2021 Bestlist. All Rights Reserved</p>
+			</footer>
+        <!--footer section end-->
+	</section>
+</body>
+</html>
